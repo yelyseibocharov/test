@@ -28,7 +28,6 @@ main{
     height: 50px;
     background-color: rgb(223, 223, 223, 0.3);
     position: relative;
-    margin-top: -32px !important;
 }
 
 .header__wrapper__top p {

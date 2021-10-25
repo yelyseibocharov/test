@@ -9,17 +9,14 @@ Author URI: https://t.me/deleted62
 */
 
 
-class news
-{
+class news {
 
-    static function setup()
-    {
+    static function setup() {
         add_action( 'init', array( __CLASS__, 'type' ) );
         add_action( 'init', array( __CLASS__, 'taxonomy' ) );
     }
 
-    static function type()
-    {
+    static function type() {
         register_post_type( 'news', array(
             'labels'                 => array(
                 'name'               => 'Новость',
@@ -51,8 +48,7 @@ class news
         ) );
     }
 
-    static function taxonomy()
-    {
+    static function taxonomy() {
         register_taxonomy( 'category', array( 'news' ), array(
             'label'                 => '',
             'labels'                => array(
